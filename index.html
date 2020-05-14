@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+    <div>
+        <span class="wrapWord wrapWordBorder" index="0">word</span>
+        &nbsp
+        <span>cats</span>
+    </div>
+    <form>
+    <input type='text' name="test1"/>  
+</form>
+<button id='theButton'>click me</button>
+    
+    
+    <div class="search-bar-wrapper">
+        <input spellcheck="false" autocomplete="off" autocapitalise="off" autocorrect="off" class="search-bar" contenteditable="true" placeholder="Search..."/>
+    </div>
+    
+    
+    <p id="values"></p>
+    <span title="I am hovering over the text" onmouseover="showSuggestions()">This is the text I want to have a mousover</span>
+    
+    <button onmouseover="showSuggestions()">hover to show suggestions</button>  
+
+    <div id="suggestion-popover-wrapper" class="suggestion-popover-wrapper">
+        <div id="suggestion-box" class="suggestion-box">
+            <button id="suggestion1" class="suggested-word" type="button"></button>
+            <button id="suggestion2" class="suggested-word" type="button"></button>
+            <button id="suggestion3" class="suggested-word" type="button"></button>
+            <button id="suggestion4" class="suggested-word" type="button"></button>
+            <button id="suggestion5" class="suggested-word" type="button"></button>
+            <button id="suggested-word-close" class="suggested-word-close" type="button" onclick="hideSugesstions()">
+                Close
+            </button>
+        <div>
+    </div>
+            
+            
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
