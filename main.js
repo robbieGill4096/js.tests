@@ -92,3 +92,10 @@ $('#suggestion3').click(function(){
 
 $('p').append('<span id="add_here">new-dynamic-text</span>');
 
+function addCss(wordIndex)
+{
+    
+    //var spanText=document.getElementById('first').style.color='red';
+     var spanText=document.getElementById(wordIndex).className = "wrapWordBorder";
+    
+}
